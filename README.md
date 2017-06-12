@@ -8,11 +8,6 @@ Differential Effective Medium theory allows the calculation of elastic propertie
 
 DEM is widely used for estimating wave-velocity in porous media. For example Xu and Payne (2009) [\[3\]][3] proposed a rock physics model for calculating wave velocities in carbonates, extending the model proposed by Xu and White (1995) [\[4\]][4]. Both of this models use DEM theory.
 
-[1]: http://asa.scitation.org/doi/pdf/10.1121/1.385172
-[2]: http://geophysics.geoscienceworld.org/content/39/5/587
-[3]: http://library.seg.org/doi/abs/10.1190/1.3064148?journalCode=leedff
-[4]: http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.1995.tb00126.x/abstract
-
 ## Implementation
 
 The goal of this package is to allow the modelling of bulk and shear moduli using only the matrix properties (bulk and shear moduli) and inclusion properties (bulk and shear moduli, aspect ratio, concentration). Additional tools for velocities modelling are also provided (i.e. Gassmann fluid substitution), since in practice the velocities are used instead of the elastic moduli.
@@ -70,4 +65,17 @@ plt.plot(phi, Vs, 'g', label='Vs')
 plt.show()
 ```
 
+## References
 
+[\[1\]][1]: James G. Berryman. (1980) Long‐wavelength propagation in composite elastic media II. Ellipsoidal inclusions. *The Journal of the Acoustical Society of America* **68**, 1820.
+
+[\[2\]][2]: Guy T. Kuster, M. Nafi Toksoz. (1974) Velocity and attenuation of seismic waves in two-phase media; Part I, Theoretical.  formulations. *Geophysics* **39**, 587.
+
+[\[3\]][3]: Shiyu Xu, Michael A. Payne. (2009) Modeling elastic properties in carbonate rocks. *The Leading Edge* **28**, 66.
+
+[\[4\]][4]: Shiyu Xu, Roy E. White. (1995) A new velocity model for clay-sand mixtures. *Geophysical Prospecting* **43**, 91.
+
+[1]: http://asa.scitation.org/doi/pdf/10.1121/1.385172
+[2]: http://geophysics.geoscienceworld.org/content/39/5/587
+[3]: http://library.seg.org/doi/abs/10.1190/1.3064148?journalCode=leedff
+[4]: http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2478.1995.tb00126.x/abstract
