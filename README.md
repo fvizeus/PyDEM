@@ -10,7 +10,9 @@ DEM is widely used for estimating wave-velocity in porous media. For example Xu 
 
 ## Implementation
 
-The goal of this package is to allow the modelling of bulk and shear moduli using only the matrix properties (bulk and shear moduli) and inclusion properties (bulk and shear moduli, aspect ratio, concentration). Additional tools for velocities modelling are also provided (i.e. Gassmann fluid substitution), since in practice the velocities are used instead of the elastic moduli.
+The goal of this package is to allow the modelling of bulk and shear moduli using only the matrix properties (bulk and shear moduli) and inclusion properties (bulk and shear moduli, aspect ratio, concentration). Additional tools for velocity modelling are also provided (i.e. Gassmann fluid substitution), since in practice the velocities are used instead of the elastic moduli.
+
+There are two implementations: Python (`DEM.py`) and Cython (`cDEM.pyx`). Both of them use `numpy` for array processing. Right now the Cython version is not fully optimized, but already gives minor performance advantage over the Python one. There is also a script (`compile.bat`) for compiling the Cython version on Windows.
 
 ## Example (example.py file)
 
@@ -64,6 +66,10 @@ plt.plot(phi, Vs, 'g', label='Vs')
 
 plt.show()
 ```
+
+This should produce the following image:
+
+![example.png](https://github.com/fvizeus/PyDEM/blob/master/example.png)
 
 ## References
 
