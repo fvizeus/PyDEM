@@ -81,8 +81,8 @@ def XuPayne():
         
         plt.plot(phi, Vp, 'g-')
     
-    data = np.loadtxt("data.txt")
-    vplog, philog, litolog = data.T
+    # data = np.loadtxt("data.txt")
+    # vplog, philog, litolog = data.T
     
     # plt.scatter(philog[litolog == 1.0], vplog[litolog == 1.0], c='b', s=5.0, zorder=-1000, linewidths=0.25)
     # plt.scatter(philog[litolog == 30.0], vplog[litolog == 30.0], c='g')
