@@ -45,4 +45,6 @@ Vs = np.sqrt(G/rho)
 plt.plot(phi, Vp, 'b', label='Vp')
 plt.plot(phi, Vs, 'g', label='Vs')
 
+plt.legend()
+
 plt.show()
